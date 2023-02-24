@@ -1,0 +1,119 @@
+/*
+Theme Name: Generatepress-child
+Theme URI: http://loquesea.es/
+Version: 4.0
+Description: Tema hijo de Generatepress
+Author: Tu
+Author URI: http://loquesea.es/
+Template: generatepress
+Text Domain: generatepress-child
+*/
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-image: url(http://proyecto.test/wp-content/uploads/2023/02/imgbanner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.text-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.699);
+  padding: 0 20px 20px 20px;
+  color: white;
+}
+
+.text-container h1 {
+  font-family: "Bebas Neue";
+  font-size: 80px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.text-container p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+button.btn-principal {
+  background-color: rgb(233, 229, 16);
+  color: black;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn-principal:hover {
+  background-color: gray;
+  color: white;
+}
+
+.btn-principal:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-principal:active {
+  background-color: black;
+  color: white;
+}
+
+.titulo-container {
+  padding-top: 30px;
+}
+
+.titulo-container h1 {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.titulo-container p {
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contenedor-slider {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  background-image: url("http://proyecto.test/wp-content/uploads/2023/02/photo-1561214078-f3247647fc5e.webp");
+  background-size: 100% 100%;
+  top: 50%;
+  left: 50%;
+  transform: (-50%, -50%);
+  width: 640px;
+  height: 360px;
+  border-radius: 10px;
+  animation: slide 10s infinite linear;
+}
+
+@keyframes slide {
+  25% {
+    background-image: url(http://proyecto.test/wp-content/uploads/2023/02/photo-1561214078-f3247647fc5e.webp);
+  }
+  50% {
+    background-image: url(http://proyecto.test/wp-content/uploads/2023/02/photo-1580086319619-3ed498161c77.webp);
+  }
+  75% {
+    background-image: url(http://proyecto.test/wp-content/uploads/2023/02/photo-1561214078-f3247647fc5e.webp);
+  }
+  100% {
+    background-image: url(http://proyecto.test/wp-content/uploads/2023/02/photo-1580086319619-3ed498161c77.webp);
+  }
+}
