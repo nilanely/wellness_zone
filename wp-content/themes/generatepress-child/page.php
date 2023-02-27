@@ -140,7 +140,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="#" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
                 <!--segunda imagen-->
@@ -155,7 +155,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="monitores.html" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
                 <!--tercera imagen-->
@@ -170,7 +170,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="monitores.html" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
                 <!--cuarta imagen-->
@@ -185,7 +185,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="monitores.html" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
                 <!--quinta imagen-->
@@ -200,7 +200,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="monitores.html" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
                 <!--sexta imagen-->
@@ -215,7 +215,7 @@ get_header(); ?>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Repellat ad odio quibusdam.
                         </p>
-                        <a href="monitores.html" class="btn-card"> Ver más </a>
+                        <a href="http://proyecto.test/actividades/" class="btn-card"> Ver más </a>
                     </div>
                 </div>
             </div>

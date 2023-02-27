@@ -1,4 +1,4 @@
-<?php /* Template Name: Plantilla actividades */
+<?php
 if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }

@@ -31,9 +31,9 @@ do_action('generate_before_footer');
 		<a href="#"><i class="fab fa-linkedin-in"></i></a>
 	</div>
 	<div class="links">
-		<a href="#">Enlace 1</a>
-		<a href="#">Enlace 2</a>
-		<a href="#">Enlace 3</a>
+		<a href="http://proyecto.test/">Inicio</a>
+		<a href="http://proyecto.test/actividades/">Actividades</a>
+		<a href="http://proyecto.test/contacto/">Contacto</a>
 	</div>
 	<div class="copyright">
 		<span>© 2023 Mi Sitio Web</span>
