@@ -15,24 +15,39 @@ add_action('add_meta_boxes', 'wz_actividad_metabox');
 function wz_render_actividad_metabox($post)
 {
     $values = get_post_custom($post->ID);
-    $descripcion = isset($values['main-descripcion']) ? esc_attr($values['main-descripcion'][0]) : '';
-    $featured_check = isset($values['is-featured']) ? esc_attr($values['is-featured'][0]) : '';
+    $dificultad = isset($values['dificultad']) ? esc_attr($values['dificultad'][0]) : '';
+    $duracion = isset($values['duracion']) ? esc_attr($values['duracion'][0]) : '';
+    if (empty($dificultad)) {
+        $dificultad = '';
+    }
+    if (empty($duracion)) {
+        $duracion = '';
+    }
     wp_nonce_field('wz' . $post->ID, 'actividad-nonce');
+    $values = get_post_custom($post->ID);
 ?>
     <div>
-        <label for="main-descripcion">
-            <?= 'Descripción corta de la actividad' ?>
+
         </label>
-        <textarea rows="3" type="text" name="main-descripcion" id="main-descripcion"><?= esc_html($descripcion); ?></textarea>
+        <?= esc_html('Dificultad:'); ?>
+        <select name="dificultad" id="dificultad">
+            <option value="baja" <?php selected($dificultad, 'baja'); ?>>Baja</option>
+            <option value="media" <?php selected($dificultad, 'media'); ?>>Media</option>
+            <option value="alta" <?php selected($dificultad, 'alta'); ?>>Alta</option>
+        </select>
     </div>
     <div>
-        <input type="checkbox" id="is-featured" name="is-featured" <?php checked($featured_check, 'on'); ?> />
-        <label for="is-featured">
-            <?= 'Actividad destacada' ?>
+        <label for="duracion">
+            <?= 'Duración:' ?>
         </label>
+        <select name="duracion" id="duracion">
+            <option value="30min" <?php selected($duracion, '30min'); ?>>30 minutos</option>
+            <option value="45min" <?php selected($duracion, '45min'); ?>>45 minutos</option>
+        </select>
     </div>
 <?php
 }
+
 
 function wz_actividad_metabox_save($post_id)
 {
@@ -49,11 +64,12 @@ function wz_actividad_metabox_save($post_id)
         return;
     }
 
-    if (isset($_POST['main-descripcion'])) {
-        update_post_meta($post_id, 'main-descripcion', sanitize_text_field($_POST['main-descripcion']));
+    if (isset($_POST['duracion'])) {
+        update_post_meta($post_id, 'duracion', sanitize_text_field($_POST['duracion']));
     }
 
-    $featured_value = isset($_POST['is-featured']) ? 'on' : '';
-    update_post_meta($post_id, 'is-featured', $featured_value);
+    if (isset($_POST['dificultad'])) {
+        update_post_meta($post_id, 'dificultad', sanitize_text_field($_POST['dificultad']));
+    }
 }
 add_action('save_post', 'wz_actividad_metabox_save');

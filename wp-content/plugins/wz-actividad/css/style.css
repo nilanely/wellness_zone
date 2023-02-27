@@ -19,3 +19,11 @@ ul.recipe-types-menu li {
   margin: 5px;
   display: inline-block;
 }
+
+.dificultad {
+  margin: 10px;
+}
+
+.duracion {
+  margin: 10px;
+}

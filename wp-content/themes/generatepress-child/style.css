@@ -574,3 +574,45 @@ ul.actividad-types-menu li {
   text-transform: uppercase;
   font-family: "Bebas Neue";
 }
+
+.actividades-shortcode {
+  display: flex;
+  gap: 20px;
+  border: solid;
+  margin: 30px;
+  padding: 10px;
+  width: 25%;
+}
+
+/* estilos single actividades*/
+.single-titulo {
+  font-size: 60px;
+  font-family: fantasy;
+  margin: 40px;
+}
+
+.single-titulo h2 {
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/* .imagen-single {
+  width: 280px;
+  height: 200px;
+} */
+
+.imagen-single img {
+  object-fit: fill;
+  width: 50%;
+  height: auto;
+}
+
+.single-titulo img:hover {
+  filter: grayscale(80%);
+}
+
+.p-contenido {
+  margin: 40px;
+  font-family: sans-serif;
+  color: rgb(80, 79, 79);
+}
