@@ -1,0 +1,21 @@
+.types-post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.post-content .recipe-image {
+  width: 280px;
+}
+
+ul.recipe-types-menu {
+  padding: 5px;
+  text-align: center;
+}
+
+ul.recipe-types-menu li {
+  list-style-type: none;
+  margin: 5px;
+  display: inline-block;
+}
